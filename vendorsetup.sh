@@ -1,0 +1,2 @@
+add_lunch_combo omni_kminilte-eng
+add_lunch_combo omni_kminilte-userdebug
