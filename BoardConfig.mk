@@ -33,20 +33,11 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # TWRP stuff
 TW_THEME := portrait_hdpi
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/msm_dwc3/f9200000.dwc3/gadget/lun%d/file"
 TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.191/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
-TW_NO_EXFAT_FUSE := true
 TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_EXCLUDE_SUPERSU := true
-
-# Encryption support
-TW_INCLUDE_CRYPTO := true
-#TW_INCLUDE_CRYPTO_SAMSUNG := true
-TARGET_HW_DISK_ENCRYPTION := true
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
-#TWRP_INCLUDE_LOGCAT := true
-#TARGET_USES_LOGD := true
+TW_USE_TOOLBOX := true
